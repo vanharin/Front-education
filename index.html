@@ -19,37 +19,39 @@
     </header>
 
     <main>
-        <div>
+        <section>
+            <div>
 
-            <!--На этот div мы потом через css добавим фоновое изображение, оно должно будет перекрывать часть серого фона из нижнего блока, но не перекрывать 3 белых блока с картинками, еще раз спасибо за подсказку) -->
-            <h2>Online travel agency</h2>
-            <h1>We help travelers</h1>
-        </div>
+                <!--На этот div мы потом через css добавим фоновое изображение, оно должно будет перекрывать часть серого фона из нижнего блока, но не перекрывать 3 белых блока с картинками, еще раз спасибо за подсказку) -->
+                <h2>Online travel agency</h2>
+                <h1>We help travelers</h1>
+            </div>
 
 
 
-        <!-- Этим трём блокам сделаем белый фон и поправим текст с картинками через css -->
-        <div>
-            <div><img src="images/mountains.png" alt=""></div>
-            <p>Find</p>
-            <p>your</p>
-            <p>adventure</p>
-        </div>
-        <div>
-            <div><img src="images/shield.png" alt=""></div>
-            <p>We will</p>
-            <p>Care</p>
-            <p>of you</p>
-        </div>
-        <div>
-            <div><img src="images/money.png" alt=""></div>
-            <p>And</p>
-            <p>Save</p>
-            <p>your money</p>
-        </div>
-        <div>
-            <!-- Этот блок (через css) сделаем серой полоской фона -->
-        </div>
+            <!-- Этим трём блокам сделаем белый фон и поправим текст с картинками через css -->
+            <div>
+                <div><img src="images/mountains.png" alt=""></div>
+                <p>Find</p>
+                <p>your</p>
+                <p>adventure</p>
+            </div>
+            <div>
+                <div><img src="images/shield.png" alt=""></div>
+                <p>We will</p>
+                <p>Care</p>
+                <p>of you</p>
+            </div>
+            <div>
+                <div><img src="images/money.png" alt=""></div>
+                <p>And</p>
+                <p>Save</p>
+                <p>your money</p>
+            </div>
+            <div>
+                <!-- Этот блок (через css) сделаем серой полоской фона -->
+            </div>
+        </section>
 
         <section>
             <!-- Сюда через css нужно добавить фон -->
@@ -90,78 +92,94 @@
 
         </section>
 
-        <div>
+        <section>
             <h2>Get started absolutely free</h2>
             <div>
                 <h2>Tell us about yourself</h2>
 
 
                 <form action="">
-                    <div>
-                        <p>Full name*</p>
-                        <input type="text" required>
+                    <fieldset>
 
-                        <p>Email*</p>
-                        <input type="text" required>
-
-                        <p>Phone number*</p>
-                        <input type="text" required>
-
-                        <p>Date of birth*</p>
-                        <input type="text" required>
-
-                        <p>Personal ID*</p>
-                        <input type="text" required>
-                    </div>
+                        <input type="text" required id="fullName" value="name"><label for="fullName">Full
+                            name*</label><br>
 
 
-                    <div>
-                        <p>
-                            <b>
-                                <h3>What kind of traveler are you?</h3>
-                            </b>
-                        </p>
-
-                        <p>
-                            <select name="" id=""></select>
-                        </p>
-
-                        <p>
-                            <b>
-                                <h3>What is important for you?</h3>
-                            </b>
-                        </p>
-                        <p>
-                            <input type="checkbox">Comfort (hotel, food, etc)
-                        </p>
-                        <p>
-                            <input type="checkbox">Impressions
-                        </p>
-                        <p>
-                            <input type="checkbox">Company
-                        </p>
-
-                        <p>
-                            <b>
-                                <h3>Do you have travel insurence</h3>
-                            </b>
-                        </p>
-                        <p>
-                            <input type="checkbox">Yes
-                        </p>
-                        <p>
-                            <input type="checkbox">No
-                        </p>
+                        <input type="text" required id="email" value="mail"><label for="email">Email*</label><br>
 
 
-                    </div>
+                        <input type="text" required id="phoneNumber" value="number"><label for="phoneNumber">Phone
+                            number*</label><br>
+
+
+                        <input type="text" required id="dateOfBirth" value="birth"><label for="dateOfBirth">Date
+                            of birth*</label><br>
+
+
+                        <input type="text" required id="personalID" value="ID"><label for="personalID">Personal
+                            ID*</label><br>
+                    </fieldset>
 
 
 
-                    <div>
-                        <p>
-                        <h3>Appload your photo to make it more personal!</h3>
-                        </p>
+                    <fieldset>
+                        <!-- задать значение для option и для value, когда узнаем что тут будет -->
+                        <select name="" id="travelerKind">
+                            <option value="">Пункт 1</option>
+                            <option value="">Пункт 2</option>
+                        </select>
+                        <label for="travelerKind">
+                            <h3>What kind of traveler are you?</h3>
+                        </label>
+
+                    </fieldset>
+
+                    <fieldset>
+
+
+                        <legend>What is important for you?</legend>
+
+
+
+                        <input type="checkbox" name="importance" id="comfort" value="comfortValue"><label
+                            for="comfort">Comfort
+                            (hotel, food,
+                            etc)</label>
+
+
+                        <input type="checkbox" name="importance" id="impressions" value="impressionsValue"><label
+                            for="impressions">Impressions</label>
+
+
+                        <input type="checkbox" name="importance" id="company" value="companyValue"><label
+                            for="company">Company</label>
+
+                    </fieldset>
+
+
+
+                    <fieldset>
+                        <legend>Do you have travel insurence</legend>
+
+
+
+                        <input type="radio" name="insurence" id="insuranceYes" value="yes"><label
+                            for="insuranceYes">Yes</label>
+
+
+                        <input type="radio" name="insurence" id="insuranceNo" value="no"><label
+                            for="insuranceNo">No</label>
+                    </fieldset>
+
+
+
+
+
+
+                    <fieldset>
+
+                        <legend>Appload your photo to make it more personal!</legend>
+
 
                         <!-- Совсем не уверен, что я сделал часть с загрузкой фото правильно  -->
                         <input id="file-input" type="file" name="file">
@@ -170,21 +188,22 @@
                         <p>Leave a comment</p>
                         <textarea name="" id="" cols="30" rows="10"></textarea>
 
-                        <div>
-                            <!-- Кнопка-->
-                            <span>Get started</span>
-                        </div>
 
-                    </div>
+                        <!-- Кнопка-->
+                        <button>Get started</button>
+
+
+                    </fieldset>
+
 
 
                 </form>
             </div>
 
 
-        </div>
+        </section>
 
-        <div>
+        <section>
             <h1>Our coaches</h1>
 
             <table>
@@ -198,30 +217,30 @@
 
                 <tr>
                     <td></td>
-                    <th>Marta</th>
-                    <th>Carol</th>
-                    <th>John</th>
+                    <td>Marta</td>
+                    <td>Carol</td>
+                    <td>John</td>
                 </tr>
 
                 <tr>
                     <td>Years of experience</td>
-                    <th>7</th>
-                    <th>10</th>
-                    <th>4</th>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>4</td>
                 </tr>
 
                 <tr>
                     <td>Numbers of countries</td>
-                    <th>32</th>
-                    <th>41</th>
-                    <th>37</th>
+                    <td>32</td>
+                    <td>41</td>
+                    <td>37</td>
                 </tr>
 
                 <tr>
                     <td>Passion</td>
-                    <th>Extreme and hiking</th>
-                    <th>Family adventure</th>
-                    <th>The beauty of the cities</th>
+                    <td>Extreme and hiking</td>
+                    <td>Family adventure</td>
+                    <td>The beauty of the cities</td>
                 </tr>
             </table>
 
@@ -230,7 +249,7 @@
                 <p>Rest assured you are in hands of professionals</p>
             </div>
 
-        </div>
+        </section>
     </main>
 
 </body>
