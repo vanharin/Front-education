@@ -19,37 +19,39 @@
     </header>
 
     <main>
-        <div>
+        <section>
+            <div>
 
-            <!--На этот div мы потом через css добавим фоновое изображение, оно должно будет перекрывать часть серого фона из нижнего блока, но не перекрывать 3 белых блока с картинками, еще раз спасибо за подсказку) -->
-            <h2>Online travel agency</h2>
-            <h1>We help travelers</h1>
-        </div>
+                <!--На этот div мы потом через css добавим фоновое изображение, оно должно будет перекрывать часть серого фона из нижнего блока, но не перекрывать 3 белых блока с картинками, еще раз спасибо за подсказку) -->
+                <h2>Online travel agency</h2>
+                <h1>We help travelers</h1>
+            </div>
 
 
 
-        <!-- Этим трём блокам сделаем белый фон и поправим текст с картинками через css -->
-        <div>
-            <div><img src="images/mountains.png" alt=""></div>
-            <p>Find</p>
-            <p>your</p>
-            <p>adventure</p>
-        </div>
-        <div>
-            <div><img src="images/shield.png" alt=""></div>
-            <p>We will</p>
-            <p>Care</p>
-            <p>of you</p>
-        </div>
-        <div>
-            <div><img src="images/money.png" alt=""></div>
-            <p>And</p>
-            <p>Save</p>
-            <p>your money</p>
-        </div>
-        <div>
-            <!-- Этот блок (через css) сделаем серой полоской фона -->
-        </div>
+            <!-- Этим трём блокам сделаем белый фон и поправим текст с картинками через css -->
+            <div>
+                <div><img src="images/mountains.png" alt=""></div>
+                <p>Find</p>
+                <p>your</p>
+                <p>adventure</p>
+            </div>
+            <div>
+                <div><img src="images/shield.png" alt=""></div>
+                <p>We will</p>
+                <p>Care</p>
+                <p>of you</p>
+            </div>
+            <div>
+                <div><img src="images/money.png" alt=""></div>
+                <p>And</p>
+                <p>Save</p>
+                <p>your money</p>
+            </div>
+            <div>
+                <!-- Этот блок (через css) сделаем серой полоской фона -->
+            </div>
+        </section>
 
         <section>
             <!-- Сюда через css нужно добавить фон -->
@@ -87,6 +89,165 @@
                     <td><img src="images/flags/tick.png" alt=""></td>
                 </tr>
             </table>
+
+        </section>
+
+        <section>
+            <h2>Get started absolutely free</h2>
+            <div>
+                <h2>Tell us about yourself</h2>
+
+
+                <form action="">
+                    <fieldset>
+
+                        <input type="text" required id="fullName" value="name"><label for="fullName">Full
+                            name*</label><br>
+
+
+                        <input type="text" required id="email" value="mail"><label for="email">Email*</label><br>
+
+
+                        <input type="text" required id="phoneNumber" value="number"><label for="phoneNumber">Phone
+                            number*</label><br>
+
+
+                        <input type="text" required id="dateOfBirth" value="birth"><label for="dateOfBirth">Date
+                            of birth*</label><br>
+
+
+                        <input type="text" required id="personalID" value="ID"><label for="personalID">Personal
+                            ID*</label><br>
+                    </fieldset>
+
+
+
+                    <fieldset>
+                        <!-- задать значение для option и для value, когда узнаем что тут будет -->
+                        <select name="" id="travelerKind">
+                            <option value="">Пункт 1</option>
+                            <option value="">Пункт 2</option>
+                        </select>
+                        <label for="travelerKind">
+                            <h3>What kind of traveler are you?</h3>
+                        </label>
+
+                    </fieldset>
+
+                    <fieldset>
+
+
+                        <legend>What is important for you?</legend>
+
+
+
+                        <input type="checkbox" name="importance" id="comfort" value="comfortValue"><label
+                            for="comfort">Comfort
+                            (hotel, food,
+                            etc)</label>
+
+
+                        <input type="checkbox" name="importance" id="impressions" value="impressionsValue"><label
+                            for="impressions">Impressions</label>
+
+
+                        <input type="checkbox" name="importance" id="company" value="companyValue"><label
+                            for="company">Company</label>
+
+                    </fieldset>
+
+
+
+                    <fieldset>
+                        <legend>Do you have travel insurence</legend>
+
+
+
+                        <input type="radio" name="insurence" id="insuranceYes" value="yes"><label
+                            for="insuranceYes">Yes</label>
+
+
+                        <input type="radio" name="insurence" id="insuranceNo" value="no"><label
+                            for="insuranceNo">No</label>
+                    </fieldset>
+
+
+
+
+
+
+                    <fieldset>
+
+                        <legend>Appload your photo to make it more personal!</legend>
+
+
+                        <!-- Совсем не уверен, что я сделал часть с загрузкой фото правильно  -->
+                        <input id="file-input" type="file" name="file">
+                        <label for="file-input">Choose photo</label>
+
+                        <p>Leave a comment</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+
+                        <!-- Кнопка-->
+                        <button>Get started</button>
+
+
+                    </fieldset>
+
+
+
+                </form>
+            </div>
+
+
+        </section>
+
+        <section>
+            <h1>Our coaches</h1>
+
+            <table>
+                <!-- Первый ряд должен выглядеть будто он отдельно от остальных строк таблицы -->
+                <tr>
+                    <td></td>
+                    <td><img src="images/Coaches/Marta.jfif" alt=""></td>
+                    <td><img src="images/Coaches/Carol.jfif" alt=""></td>
+                    <td><img src="images/Coaches/John.jfif" alt=""></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Marta</td>
+                    <td>Carol</td>
+                    <td>John</td>
+                </tr>
+
+                <tr>
+                    <td>Years of experience</td>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <td>Numbers of countries</td>
+                    <td>32</td>
+                    <td>41</td>
+                    <td>37</td>
+                </tr>
+
+                <tr>
+                    <td>Passion</td>
+                    <td>Extreme and hiking</td>
+                    <td>Family adventure</td>
+                    <td>The beauty of the cities</td>
+                </tr>
+            </table>
+
+            <div>
+                <!-- Сделать белый фон и спозиционировать справа -->
+                <p>Rest assured you are in hands of professionals</p>
+            </div>
 
         </section>
     </main>
