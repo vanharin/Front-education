@@ -7,100 +7,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online travel agency</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
         <!-- Кнопки навигации выровняем слева и сделем белый фон хедеру -->
-        <nav class="headerNavigation">
-            <a class="navLink" href="">Home</a>
-            <a class="navLink" href="">FAQ</a>
-            <a class="navLink" href="">Contact us</a>
+        <nav class="header-navigation">
+            <a class="nav-link" href="">Home</a>
+            <a class="nav-link" href="">FAQ</a>
+            <a class="nav-link" href="">Contact us</a>
         </nav>
     </header>
 
-    <main>
-        <section class="firstSection">
+    <main class="main-content">
+        <section class="intro-heading-big">
             <div class="intro">
 
                 <!--На этот div мы потом через css добавим фоновое изображение, оно должно будет перекрывать часть серого фона из нижнего блока, но не перекрывать 3 белых блока с картинками, еще раз спасибо за подсказку) -->
-                <h2 class="firstSectionHeader2">Online travel agency</h2>
-                <h1 class="firstSectionHeader1">We help travelers</h1>
+
+                <h2 class="intro-section-header2">Online travel agency</h2>
+                <h1 class="intro-section-header1">We help travelers</h1>
+
             </div>
 
             <!-- Этот блок (через css) сделаем серой полоской фона -->
-            <div class="grayPart">
+            <div class="gray-part">
                 <!-- Этим трём блокам сделаем белый фон и поправим текст с картинками через css -->
-                <div class="careBloks">
-                    <div class="careImagesBlock"><img class="careImages" src="images/mountains.png" alt=""></div>
-                    <p class="careText">Find</p>
-                    <p class="careText">your</p>
-                    <p class="careText">adventure</p>
+                <div class="care-bloks">
+                    <div class="care-images-block"><img class="care-images" src="images/mountains.png" alt=""></div>
+                    <p class="care-text">Find</p>
+                    <p class="care-text">YOUR</p>
+                    <p class="care-text">adventure</p>
                 </div>
-                <div class="careBloks">
-                    <div class="careImagesBlock"><img class="careImages" src="images/shield.png" alt=""></div>
-                    <p class="careText">We will</p>
-                    <p class="careText">Care</p>
-                    <p class="careText">of you</p>
+                <div class="care-bloks">
+                    <div class="care-images-block"><img class="care-images" src="images/shield.png" alt=""></div>
+                    <p class="care-text">We will</p>
+                    <p class="care-text">CARE</p>
+                    <p class="care-text">of you</p>
                 </div>
-                <div class="careBloks">
-                    <div class="careImagesBlock"><img class="careImages" src="images/money.png" alt=""></div>
-                    <p class="careText">And</p>
-                    <p class="careText">Save</p>
-                    <p class="careText">your money</p>
+                <div class="care-bloks">
+                    <div class="care-images-block"><img class="care-images" src="images/money.png" alt=""></div>
+                    <p class="care-text">And</p>
+                    <p class="care-text">SAVE</p>
+                    <p class="care-text">your money</p>
                 </div>
 
 
             </div>
         </section>
 
-        <section class="secondSection">
+        <section class="intro-heading-small">
             <!-- Сюда через css нужно добавить фон -->
-            <h1>Choose your plan</h1>
-            <table class="priceTable">
+            <h1 class="plan-heading">Choose your plan</h1>
+            <table class="price-table">
                 <!-- У таблицы через css нужно сделать тень, границы и разные цвета столбцов -->
                 <tr>
-                    <th>Plan</th>
-                    <th>Basic</th>
-                    <th>Standart</th>
-                    <th>Premium</th>
+                    <th class="price-first-column all-price-cells">Plan</th>
+                    <th class="price-heading all-price-cells">Basic</th>
+                    <th class="price-heading all-price-cells">Standart</th>
+                    <th class="price-heading all-price-cells">Premium</th>
                 </tr>
                 <tr>
-                    <td>Price</td>
-                    <td>19.99$</td>
-                    <td>39.99$</td>
-                    <td>79.99$</td>
+                    <td class="price-first-column all-price-cells">Price</td>
+                    <td class="all-price-cells">19.99$</td>
+                    <td class="all-price-cells">39.99$</td>
+                    <td class="all-price-cells">79.99$</td>
                 </tr>
                 <tr>
-                    <td>Trip guide</td>
-                    <td><img class="flagImages" src="images/flags/tick.png" alt=""></td>
-                    <td><img class="flagImages" src="images/flags/tick.png" alt=""></td>
-                    <td><img class="flagImages" src="images/flags/tick.png" alt=""></td>
+                    <td class="price-first-column all-price-cells">Trip guide</td>
+                    <td class="all-price-cells"><img class="flag-images" src="images/flags/tick.png" alt=""></td>
+                    <td class="all-price-cells"><img class="flag-images" src="images/flags/tick.png" alt=""></td>
+                    <td class="all-price-cells"><img class="flag-images" src="images/flags/tick.png" alt=""></td>
                 </tr>
                 <tr>
-                    <td>Hotel included</td>
-                    <td><img class="flagImages" src="images/flags/cross.png" alt=""></td>
-                    <td><img class="flagImages" src="images/flags/tick.png" alt=""></td>
-                    <td><img class="flagImages" src="images/flags/tick.png" alt=""></td>
+                    <td class="price-first-column all-price-cells">Hotel included</td>
+                    <td class="all-price-cells"><img class="flag-images" src="images/flags/cross.png" alt=""></td>
+                    <td class="all-price-cells"><img class="flag-images" src="images/flags/tick.png" alt=""></td>
+                    <td class="all-price-cells"><img class="flag-images" src="images/flags/tick.png" alt=""></td>
                 </tr>
                 <tr>
-                    <td>Personal coach</td>
-                    <td><img class="flagImages" src="images/flags/cross.png" alt=""></td>
-                    <td><img class="flagImages" src="images/flags/cross.png" alt=""></td>
-                    <td><img class="flagImages" src="images/flags/tick.png" alt=""></td>
+                    <td class="price-first-column all-price-cells">Personal coach</td>
+                    <td class="all-price-cells"><img class="flag-images" src="images/flags/cross.png" alt=""></td>
+                    <td class="all-price-cells"><img class="flag-images" src="images/flags/cross.png" alt=""></td>
+                    <td class="all-price-cells"><img class="flag-images" src="images/flags/tick.png" alt=""></td>
                 </tr>
             </table>
 
         </section>
 
-        <section class="thirdSection">
-            <h2 class="thirdSectionHeader2">Get started absolutely free</h2>
-            <div>
-                <h2 class="fieldsetHeader">Tell us about yourself</h2>
+        <section class="personal-info-section">
+            <h2 class="info-general-header">Get started absolutely free</h2>
+            <div class="info-cover">
+                <h2 class="fieldset-header">Tell us about yourself</h2>
 
 
-                <form action="" class="pesonalInfoForm">
-                    <fieldset class="personalInfoFieldsets">
+                <form action="" class="pesonal-info-form">
+                    <fieldset class="personal-info-fieldsets">
 
                         <input type="text" required id="fullName" value="name"><label for="fullName">Full
                             name*</label><br>
@@ -123,14 +133,14 @@
 
 
 
-                    <fieldset class="personalInfoFieldsets">
+                    <fieldset class="personal-info-fieldsets">
                         <!-- задать значение для option и для value, когда узнаем что тут будет -->
                         <select name="" id="travelerKind">
                             <option value="">Пункт 1</option>
                             <option value="">Пункт 2</option>
                         </select>
                         <label for="travelerKind">
-                            <h3 class="legendHeaders">What kind of traveler are you?</h3>
+                            <h3 class="legend-headers">What kind of traveler are you?</h3>
                         </label>
 
 
@@ -138,7 +148,7 @@
 
 
 
-                        <legend class="legendHeaders">What is important for you?</legend>
+                        <legend class="legend-headers">What is important for you?</legend>
 
 
 
@@ -160,7 +170,7 @@
 
 
 
-                        <legend class="legendHeaders">Do you have travel insurence</legend>
+                        <legend class="legend-headers">Do you have travel insurence</legend>
 
 
 
@@ -177,9 +187,9 @@
 
 
 
-                    <fieldset class="personalInfoFieldsets">
+                    <fieldset class="personal-info-fieldsets">
 
-                        <legend class="legendHeaders">Appload your photo to make it more personal!</legend>
+                        <legend class="legend-headers">Appload your photo to make it more personal!</legend>
 
 
                         <!-- Совсем не уверен, что я сделал часть с загрузкой фото правильно  -->
@@ -191,7 +201,7 @@
 
 
                         <!-- Кнопка-->
-                        <button class="startButton">Get started</button>
+                        <button class="start-button">Get started</button>
 
 
                     </fieldset>
@@ -204,48 +214,48 @@
 
         </section>
 
-        <section class="fourthSection">
-            <h1 class="fourthSectionHeader1">Our coaches</h1>
+        <section class="last-section">
+            <h1 class="last-section-header1">Our coaches</h1>
 
-            <table class="coachesInfoTable">
+            <table class="coaches-info-table">
                 <!-- Первый ряд должен выглядеть будто он отдельно от остальных строк таблицы -->
                 <tr class="coachesPhoto">
                     <td></td>
-                    <td><img class="coachesPhoto" src="images/Coaches/Marta.jfif" alt=""></td>
-                    <td><img class="coachesPhoto" src="images/Coaches/Carol.jfif" alt=""></td>
-                    <td><img class="coachesPhoto" src="images/Coaches/John.jfif" alt=""></td>
+                    <td><img class="coaches-photo" src="images/Coaches/Marta.jfif" alt=""></td>
+                    <td><img class="coaches-photo" src="images/Coaches/Carol.jfif" alt=""></td>
+                    <td><img class="coaches-photo" src="images/Coaches/John.jfif" alt=""></td>
                 </tr>
 
-                <tr class="coachesInfo">
+                <tr class="coaches-info">
                     <td></td>
-                    <td class="coashesData">Marta</td>
-                    <td class="coashesData">Carol</td>
-                    <td class="coashesData">John</td>
+                    <td class="coashes-data">Marta</td>
+                    <td class="coashes-data">Carol</td>
+                    <td class="coashes-data">John</td>
                 </tr>
 
-                <tr class="coachesInfo">
-                    <td class="keyPoints">Years of experience</td>
-                    <td class="coashesData">7</td>
-                    <td class="coashesData">10</td>
-                    <td class="coashesData">4</td>
+                <tr class="coaches-info">
+                    <td class="key-points">Years of experience</td>
+                    <td class="coashes-data">7</td>
+                    <td class="coashes-data">10</td>
+                    <td class="coashes-data">4</td>
                 </tr>
 
                 <tr>
-                    <td class="keyPoints">Numbers of countries</td>
-                    <td class="coashesData">32</td>
-                    <td class="coashesData">41</td>
-                    <td class="coashesData">37</td>
+                    <td class="key-points">Numbers of countries</td>
+                    <td class="coashes-data">32</td>
+                    <td class="coashes-data">41</td>
+                    <td class="coashes-data">37</td>
                 </tr>
 
-                <tr class="coachesInfo">
-                    <td class="keyPoints">Passion</td>
-                    <td class="coashesData">Extreme and hiking</td>
-                    <td class="coashesData">Family adventure</td>
-                    <td class="coashesData">The beauty of the cities</td>
+                <tr class="coaches-info">
+                    <td class="key-points">Passion</td>
+                    <td class="coashes-data">Extreme and hiking</td>
+                    <td class="coashes-data">Family adventure</td>
+                    <td class="coashes-data">The beauty of the cities</td>
                 </tr>
             </table>
 
-            <div class="smallMotivation">
+            <div class="small-motivation">
                 <!-- Сделать белый фон и спозиционировать справа -->
                 <p>Rest assured you are in hands of professionals</p>
             </div>

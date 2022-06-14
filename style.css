@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+main {
+    min-height: 100%;
+}
+
+/* HEADER */
+.header {
+    height: 80px;
+    width: 1440px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: flex-end;
+
+
+
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 32px;
+
+}
+
+/* MAIN CONTENT BLOCK */
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    width: 1440px;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(images/backgrounds/mountine-background.jfif);
+    background-size: 100% 150%;
+    background-position: top;
+
+
+
+}
+
+.intro-section-header2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.intro-section-header1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    font-size: 70px;
+    font-weight: 700;
+    margin-top: 31.17px;
+}
+
+.gray-part {
+    width: 1440px;
+    height: 345px;
+    background-color: #E0EBE6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+
+.care-bloks {
+    width: 300px;
+    height: 380px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+    z-index: 1;
+    bottom: 114px;
+
+}
+
+.care-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0%;
+}
+
+.care-images {
+    width: 96px;
+    height: 96px;
+}
+
+
+/* INTRO HEADING BLOCK */
+.intro-heading-small {
+    width: 1440px;
+    height: 860px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/backgrounds/seaside-background.jfif);
+    background-position: top;
+    background-size: 100%;
+    gap: 86px;
+}
+
+.plan-heading {
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.price-table {
+    border-collapse: collapse;
+}
+
+.all-price-cells {
+    width: 251.8px;
+    height: 96.97px;
+    text-align: center;
+    border: 1px#000000 solid;
+
+
+}
+
+
+
+.flag-images {
+    width: 64.75px;
+    height: 65.45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.personal-info-section {
+    width: 1440px;
+    height: 860px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-cover {
+    width: 1320px;
+    height: 633px;
+}
+
+.pesonal-info-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.coaches-photo {
+    width: 200px;
+    height: 200px;
+}
