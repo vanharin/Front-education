@@ -71,33 +71,42 @@
                 <!-- У таблицы через css нужно сделать тень, границы и разные цвета столбцов -->
                 <tr>
                     <th class="price-first-column all-price-cells">Plan</th>
-                    <th class="price-heading all-price-cells">Basic</th>
-                    <th class="price-heading all-price-cells">Standart</th>
-                    <th class="price-heading all-price-cells">Premium</th>
+                    <th class="price-second-column price-heading all-price-cells">Basic</th>
+                    <th class="price-third-column price-heading all-price-cells">Standart</th>
+                    <th class="price-fourth-column price-heading all-price-cells">Premium</th>
                 </tr>
                 <tr>
                     <td class="price-first-column all-price-cells">Price</td>
-                    <td class="all-price-cells">19.99$</td>
-                    <td class="all-price-cells">39.99$</td>
-                    <td class="all-price-cells">79.99$</td>
+                    <td class="price-second-column all-price-cells">19.99$</td>
+                    <td class="price-third-column all-price-cells">39.99$</td>
+                    <td class="price-fourth-column all-price-cells">79.99$</td>
                 </tr>
                 <tr>
                     <td class="price-first-column all-price-cells">Trip guide</td>
-                    <td class="all-price-cells"><img class="flag-images" src="images/flags/tick.png" alt=""></td>
-                    <td class="all-price-cells"><img class="flag-images" src="images/flags/tick.png" alt=""></td>
-                    <td class="all-price-cells"><img class="flag-images" src="images/flags/tick.png" alt=""></td>
+                    <td class="price-second-column all-price-cells"><img class="flag-images" src="images/flags/tick.png"
+                            alt=""></td>
+                    <td class="price-third-column all-price-cells"><img class="flag-images" src="images/flags/tick.png"
+                            alt=""></td>
+                    <td class="price-fourth-column all-price-cells"><img class="flag-images" src="images/flags/tick.png"
+                            alt=""></td>
                 </tr>
                 <tr>
                     <td class="price-first-column all-price-cells">Hotel included</td>
-                    <td class="all-price-cells"><img class="flag-images" src="images/flags/cross.png" alt=""></td>
-                    <td class="all-price-cells"><img class="flag-images" src="images/flags/tick.png" alt=""></td>
-                    <td class="all-price-cells"><img class="flag-images" src="images/flags/tick.png" alt=""></td>
+                    <td class="price-second-column all-price-cells"><img class="flag-images"
+                            src="images/flags/cross.png" alt=""></td>
+                    <td class="price-third-column all-price-cells"><img class="flag-images" src="images/flags/tick.png"
+                            alt=""></td>
+                    <td class="price-fourth-column all-price-cells"><img class="flag-images" src="images/flags/tick.png"
+                            alt=""></td>
                 </tr>
                 <tr>
                     <td class="price-first-column all-price-cells">Personal coach</td>
-                    <td class="all-price-cells"><img class="flag-images" src="images/flags/cross.png" alt=""></td>
-                    <td class="all-price-cells"><img class="flag-images" src="images/flags/cross.png" alt=""></td>
-                    <td class="all-price-cells"><img class="flag-images" src="images/flags/tick.png" alt=""></td>
+                    <td class="price-second-column all-price-cells"><img class="flag-images"
+                            src="images/flags/cross.png" alt=""></td>
+                    <td class="price-third-column all-price-cells"><img class="flag-images" src="images/flags/cross.png"
+                            alt=""></td>
+                    <td class="price-fourth-column all-price-cells"><img class="flag-images" src="images/flags/tick.png"
+                            alt=""></td>
                 </tr>
             </table>
 
@@ -112,23 +121,24 @@
                 <form action="" class="pesonal-info-form">
                     <fieldset class="personal-info-fieldsets">
 
-                        <input type="text" required id="fullName" value="name"><label for="fullName">Full
-                            name*</label><br>
+                        <label for="fullName">Full name*</label><input type="text" required id="fullName"
+                            value="name"><br>
 
 
-                        <input type="text" required id="email" value="mail"><label for="email">Email*</label><br>
+                        <label for="email">Email*</label><input type="text" required id="email" value="mail"><br>
 
 
-                        <input type="text" required id="phoneNumber" value="number"><label for="phoneNumber">Phone
-                            number*</label><br>
+                        <label for="phoneNumber">Phone number*</label><input type="text" required id="phoneNumber"
+                            value="number"><br>
 
 
-                        <input type="text" required id="dateOfBirth" value="birth"><label for="dateOfBirth">Date
-                            of birth*</label><br>
+
+                        <label for="dateOfBirth">Date of birth*</label><input type="text" required id="dateOfBirth"
+                            value="birth"><br>
 
 
-                        <input type="text" required id="personalID" value="ID"><label for="personalID">Personal
-                            ID*</label><br>
+                        <label for="personalID">Personal ID*</label><input type="text" required id="personalID"
+                            value="ID"><br>
                     </fieldset>
 
 
@@ -152,10 +162,9 @@
 
 
 
-                        <input type="checkbox" name="importance" id="comfort" value="comfortValue"><label
-                            for="comfort">Comfort
+                        <label for="comfort">Comfort
                             (hotel, food,
-                            etc)</label>
+                            etc)</label><input type="checkbox" name="importance" id="comfort" value="comfortValue">
 
 
                         <input type="checkbox" name="importance" id="impressions" value="impressionsValue"><label
