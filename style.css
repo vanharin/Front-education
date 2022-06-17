@@ -92,10 +92,7 @@ main {
     height: 345px;
     background-color: #E0EBE6;
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
-
-
 }
 
 .care-bloks {
@@ -117,7 +114,7 @@ main {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 32px;
-    margin: 0%;
+    margin: 0;
 }
 
 .care-images {
@@ -150,19 +147,15 @@ main {
 .price-table {
     border-collapse: collapse;
     margin-bottom: 102px;
-    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.45);
-    -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.45);
     box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.45);
 
 }
 
 .all-price-cells {
-    width: 251.8px;
-    height: 96.97px;
+    width: 252px;
+    height: 97px;
     text-align: center;
-    border: 1px#000000 solid;
-
-
+    border: 1px #000000 solid;
 }
 
 .price-first-column {
@@ -195,8 +188,8 @@ main {
 }
 
 .flag-images {
-    width: 64.75px;
-    height: 65.45px;
+    width: 65px;
+    height: 65px;
 }
 
 /* PERSONAL INFO SECTION */
@@ -232,10 +225,21 @@ main {
     justify-content: space-evenly;
 }
 
+.your-info-input {
+    border-radius: 0;
+    border: 1px solid #585858;
+    height: 39px;
+    width: 278px;
+}
+
+.red-star {
+    color: red;
+}
+
 
 
 .fieldset-header {
-    margin-left: 50px;
+    margin-left: 69px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 48px;
@@ -250,7 +254,6 @@ main {
 
 .pesonal-info-form {
     display: flex;
-    flex-direction: row;
 }
 
 .coaches-photo {
@@ -263,9 +266,163 @@ main {
     display: flex;
     flex-direction: column;
     border: 0 none;
+    width: 238px;
+    padding: 0;
+
+}
+/* CHECKBOX-START*/
+.kind-of-traveler-checkbox {
+    position: relative;
+    
+}
+.choose-kind-checkbox {
+    appearance: none;
+    position: absolute;
+}
+
+.choose-kind-label{
+    font-size: 24px;
+    color: #585858;
+    font-weight: 400;
+    padding-left: 33px;
+    font-family: 'Open Sans';
+    cursor: pointer;
+}
+
+.choose-kind-label:before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #585858;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: 1;
+    transition: background .1s linear, border .1s linear;;
+}
+
+.choose-kind-label:after {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: url(images/checkbox-flags/flag-checkbox.png) no-repeat;
+    background-size: 22px 22px;
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity .1s linear;
+}
+
+.choose-kind-checkbox:checked + .choose-kind-label:before {
+    background-color: rgb(224, 224, 224);
+    border-color:  #696868;
+
+} 
+
+.choose-kind-checkbox:checked + .choose-kind-label:after {
+    opacity: 1;
+}
+/* CHECKBOX-END */
+
+
+
+
+/* RADIO-START */
+
+.kind-of-traveler-radio{
+    position: relative;
+}
+
+
+.kind-radio-input {
+    appearance: none;
+    position: absolute;
+}
+
+.kind-radio-label {
+    font-size: 24px;
+    color: #585858;
+    font-weight: 400;
+    padding-left: 33px;
+    font-family: 'Open Sans';
+    cursor: pointer;
+}
+
+.kind-radio-label:before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #585858;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: 1;
+    transition: background .1s linear, border .1s linear;;
+}
+.kind-radio-label:after {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-image: url(images/checkbox-flags/black-dot-radio.png);
+    background-size: 22px 22px;
+    position: absolute;
+    left: 2px;
+    top: 6px;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity .1s linear;
 
 }
 
+
+
+.kind-radio-input:checked + .kind-radio-label:after {
+    opacity: 1;
+}
+.kind-radio-input:checked + .kind-radio-label:before {
+    background-color: rgb(224, 224, 224);
+    border-color:  #696868;
+
+}
+
+
+
+
+/* RADIO-END */
+
+
+.important-select {
+    border-radius: 0;
+    height: 39px;
+    width: 362px;
+}
+
+.upload-photo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 27px;
+}
+
+.show-photo {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #585858;
+}
+
+.tell-about-you {
+    width: 371px;
+    height: 114px;
+}
 
 
 /* LAST SECTION */
@@ -278,6 +435,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
 
+.file-input {
+    display: none;
 }

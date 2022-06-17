@@ -9,9 +9,6 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
@@ -121,36 +118,36 @@
                 <form action="" class="pesonal-info-form">
                     <fieldset class="personal-info-fieldsets">
 
-                        <label for="fullName">Full name*</label><input type="text" required id="fullName"
-                            value="name"><br>
+                        <label for="fullName">Full name <span class="red-star">*</span></label><input class="your-info-input" type="text" required id="fullName"
+                            value=""><br>
 
 
-                        <label for="email">Email*</label><input type="text" required id="email" value="mail"><br>
+                        <label for="">Email <span class="red-star">*</span></label><input class="your-info-input" type="text" required id="email" value=""><br>
 
 
-                        <label for="phoneNumber">Phone number*</label><input type="text" required id="phoneNumber"
-                            value="number"><br>
+                        <label for="phoneNumber">Phone number <span class="red-star">*</span></label><input class="your-info-input" type="text" required id="phoneNumber"
+                            value=""><br>
 
 
 
-                        <label for="dateOfBirth">Date of birth*</label><input type="text" required id="dateOfBirth"
-                            value="birth"><br>
+                        <label for="dateOfBirth">Date of birth <span class="red-star">*</span></label><input class="your-info-input" type="text" required id="dateOfBirth"
+                            value=""><br>
 
 
-                        <label for="personalID">Personal ID*</label><input type="text" required id="personalID"
-                            value="ID"><br>
+                        <label for="personalID">Personal ID <span class="red-star">*</span></label><input class="your-info-input" type="text" required id="personalID"
+                            value=""><br>
                     </fieldset>
 
 
 
                     <fieldset class="personal-info-fieldsets">
                         <!-- задать значение для option и для value, когда узнаем что тут будет -->
-                        <select name="" id="travelerKind">
+                        <select class="important-select" name="" id="travelerKind">
                             <option value="">Пункт 1</option>
                             <option value="">Пункт 2</option>
                         </select>
                         <label for="travelerKind">
-                            <h3 class="legend-headers">What kind of traveler are you?</h3>
+                            <h3 class="legend-headers"><h3>What kind of traveler are you?</h3></h3>
                         </label>
 
 
@@ -158,37 +155,37 @@
 
 
 
-                        <legend class="legend-headers">What is important for you?</legend>
+                        <legend class="legend-headers"><h3>What is important for you?</h3></legend>
+
+                        
+                        <div class="kind-of-traveler-checkbox">
+                        <input class="choose-kind-checkbox" type="checkbox" name="importance" id="comfort" value="comfortValue">
+                        <label class="choose-kind-label" for="comfort">Comfort (hotel, food,etc)</label>
+                        </div>
+                        <div class="kind-of-traveler-checkbox">
+                        <input class="choose-kind-checkbox" type="checkbox" name="importance" id="impressions" value="impressionsValue">
+                        <label class="choose-kind-label" for="impressions">Impressions</label>
+                        </div>
+                        <div class="kind-of-traveler-checkbox">
+                        <input class="choose-kind-checkbox" type="checkbox" name="importance" id="company" value="companyValue">
+                        <label class="choose-kind-label" for="company">Company</label>
+                        </div>
 
 
 
-                        <label for="comfort">Comfort
-                            (hotel, food,
-                            etc)</label><input type="checkbox" name="importance" id="comfort" value="comfortValue">
 
 
-                        <input type="checkbox" name="importance" id="impressions" value="impressionsValue"><label
-                            for="impressions">Impressions</label>
+                        <legend class="legend-headers"><h3>Do you have travel insurence</h3></legend>
 
 
-                        <input type="checkbox" name="importance" id="company" value="companyValue"><label
-                            for="company">Company</label>
-
-
-
-
-
-
-                        <legend class="legend-headers">Do you have travel insurence</legend>
-
-
-
-                        <input type="radio" name="insurence" id="insuranceYes" value="yes"><label
-                            for="insuranceYes">Yes</label>
-
-
-                        <input type="radio" name="insurence" id="insuranceNo" value="no"><label
-                            for="insuranceNo">No</label>
+                        <div class="kind-of-traveler-radio">
+                        <input class="kind-radio-input" type="radio" name="insurence" id="insuranceYes" value="yes">
+                        <label class="kind-radio-label" for="insuranceYes">Yes</label>
+                        </div> 
+                        <div class="kind-of-traveler-radio">
+                        <input class="kind-radio-input" type="radio" name="insurence" id="insuranceNo" value="no">
+                        <label class="kind-radio-label" for="insuranceNo">No</label>
+                        </div>
                     </fieldset>
 
 
@@ -198,15 +195,18 @@
 
                     <fieldset class="personal-info-fieldsets">
 
-                        <legend class="legend-headers">Appload your photo to make it more personal!</legend>
+                        <legend class="legend-headers"><h3>Appload your photo to make it more personal!</h3></legend>
 
 
                         <!-- Совсем не уверен, что я сделал часть с загрузкой фото правильно  -->
-                        <input id="file-input" type="file" name="file">
-                        <label for="file-input">Choose photo</label>
-
-                        <p>Leave a comment</p>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        
+                        <div class="upload-photo">
+                        <input id="file-input" type="file" name="file" class="file-input">
+                        <label for="file-input" class="choose-photo">Choose photo</label>
+                        <div class="show-photo"></div>
+                        </div>
+                        <label for="tellAboutYou">Leave a comment</label> 
+                        <textarea class="tell-about-you" name="" id="tellAboutYou" cols="30" rows="10"></textarea>
 
 
                         <!-- Кнопка-->
