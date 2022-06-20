@@ -110,13 +110,14 @@
         </section>
 
         <section class="personal-info-section">
-            <h2 class="info-general-header">Get started absolutely free</h2>
+            
+            <p class="info-general-header">Get started absolutely free</p>
             <div class="info-cover">
                 <h2 class="fieldset-header">Tell us about yourself</h2>
 
 
                 <form action="" class="pesonal-info-form">
-                    <fieldset class="personal-info-fieldsets">
+                    <fieldset class="personal-info-fieldsets personal-info-fieldsets-margin1 personal-info-fieldsets-width1">
 
                         <label for="fullName">Full name <span class="red-star">*</span></label><input class="your-info-input" type="text" required id="fullName"
                             value=""><br>
@@ -140,43 +141,37 @@
 
 
 
-                    <fieldset class="personal-info-fieldsets">
-                        <!-- задать значение для option и для value, когда узнаем что тут будет -->
-                        <select class="important-select" name="" id="travelerKind">
-                            <option value="">Пункт 1</option>
-                            <option value="">Пункт 2</option>
+                    <fieldset class="personal-info-fieldsets .personal-info-fieldsets-margin2">
+
+                        <legend class="legend-headers"><p>What kind of traveler are you?</p></legend>
+
+                        <div class="kind-select-cover">
+                        <select class="kind-select" name="" id="travelerKind">
+                            <option value="">Active</option>
+                            <option value="">Passive</option>
                         </select>
-                        <label for="travelerKind">
-                            <h3 class="legend-headers"><h3>What kind of traveler are you?</h3></h3>
-                        </label>
-
-
-
-
-
-
-                        <legend class="legend-headers"><h3>What is important for you?</h3></legend>
-
+                        </div>
                         
-                        <div class="kind-of-traveler-checkbox">
+                        
+            
+                        <legend class="legend-headers legend-headers-kind-checkbox-margin"><p>What is important for you?</p></legend>
+                        
+                        <div class="kind-of-traveler-checkbox"> 
                         <input class="choose-kind-checkbox" type="checkbox" name="importance" id="comfort" value="comfortValue">
                         <label class="choose-kind-label" for="comfort">Comfort (hotel, food,etc)</label>
                         </div>
+
                         <div class="kind-of-traveler-checkbox">
                         <input class="choose-kind-checkbox" type="checkbox" name="importance" id="impressions" value="impressionsValue">
                         <label class="choose-kind-label" for="impressions">Impressions</label>
                         </div>
+
                         <div class="kind-of-traveler-checkbox">
                         <input class="choose-kind-checkbox" type="checkbox" name="importance" id="company" value="companyValue">
                         <label class="choose-kind-label" for="company">Company</label>
                         </div>
 
-
-
-
-
-                        <legend class="legend-headers"><h3>Do you have travel insurence</h3></legend>
-
+                        <legend class="legend-headers legend-headers-kind-radio-margin"><p>Do you have travel insurence</p></legend>
 
                         <div class="kind-of-traveler-radio">
                         <input class="kind-radio-input" type="radio" name="insurence" id="insuranceYes" value="yes">
@@ -193,19 +188,17 @@
 
 
 
-                    <fieldset class="personal-info-fieldsets">
+                    <fieldset class="personal-info-fieldsets personal-info-fieldsets-margin3">
 
-                        <legend class="legend-headers"><h3>Appload your photo to make it more personal!</h3></legend>
+                        <legend class="legend-headers"><p>Appload your photo to make it more personal!</p></legend>
 
-
-                        <!-- Совсем не уверен, что я сделал часть с загрузкой фото правильно  -->
                         
                         <div class="upload-photo">
                         <input id="file-input" type="file" name="file" class="file-input">
                         <label for="file-input" class="choose-photo">Choose photo</label>
-                        <div class="show-photo"></div>
+                        <div class="show-photo"><img src="#" alt="yor photo" class="your-photo"></div>
                         </div>
-                        <label for="tellAboutYou">Leave a comment</label> 
+                        <label for="tellAboutYou" class="leave-comment">Leave a comment</label> 
                         <textarea class="tell-about-you" name="" id="tellAboutYou" cols="30" rows="10"></textarea>
 
 
@@ -224,49 +217,49 @@
         </section>
 
         <section class="last-section">
-            <h1 class="last-section-header1">Our coaches</h1>
+            <p class="last-section-header1">Our coaches</p>
 
             <table class="coaches-info-table">
                 <!-- Первый ряд должен выглядеть будто он отдельно от остальных строк таблицы -->
                 <tr class="coachesPhoto">
-                    <td></td>
+                    <td class=""></td>
                     <td><img class="coaches-photo" src="images/Coaches/Marta.jfif" alt=""></td>
                     <td><img class="coaches-photo" src="images/Coaches/Carol.jfif" alt=""></td>
                     <td><img class="coaches-photo" src="images/Coaches/John.jfif" alt=""></td>
                 </tr>
 
                 <tr class="coaches-info">
-                    <td></td>
+                    <td class="coaches-table-column1 table-left-top"></td>
                     <td class="coashes-data">Marta</td>
                     <td class="coashes-data">Carol</td>
-                    <td class="coashes-data">John</td>
+                    <td class="coashes-data table-right-top ">John</td>
                 </tr>
 
-                <tr class="coaches-info">
-                    <td class="key-points">Years of experience</td>
-                    <td class="coashes-data">7</td>
-                    <td class="coashes-data">10</td>
-                    <td class="coashes-data">4</td>
+                <tr class="experience-string">
+                    <td class="coaches-table-column1 border-inside">Years of experience</td>
+                    <td class="coashes-data border-inside">7</td>
+                    <td class="coashes-data border-inside">10</td>
+                    <td class="coashes-data short-border short-border2"><div class="">4</div></td>
                 </tr>
 
-                <tr>
-                    <td class="key-points">Numbers of countries</td>
-                    <td class="coashes-data">32</td>
-                    <td class="coashes-data">41</td>
-                    <td class="coashes-data">37</td>
+                <tr class="countries-string">
+                    <td class="coaches-table-column1 border-inside">Numbers of countries</td>
+                    <td class="coashes-data border-inside">32</td>
+                    <td class="coashes-data border-inside">41</td>
+                    <td class="coashes-data "><div class="">37</div></td>
                 </tr>
 
-                <tr class="coaches-info">
-                    <td class="key-points">Passion</td>
+                <tr class="passion-string">
+                    <td class="coaches-table-column1 table-left-bottom">Passion</td>
                     <td class="coashes-data">Extreme and hiking</td>
                     <td class="coashes-data">Family adventure</td>
-                    <td class="coashes-data">The beauty of the cities</td>
+                    <td class="coashes-data table-right-bottom short-border">The beauty of the cities</td>
                 </tr>
             </table>
 
             <div class="small-motivation">
                 <!-- Сделать белый фон и спозиционировать справа -->
-                <p>Rest assured you are in hands of professionals</p>
+                <span>Rest assured you are in hands of professionals</span>
             </div>
 
         </section>
